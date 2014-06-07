@@ -1,0 +1,161 @@
+@font-face
+{
+  font-family: SunMoon;
+  src: url(SunandMoon.ttf);
+}
+
+@font-face
+{
+  font-family: Fenix;
+  src: url(Fenix-Regular.otf);
+}
+
+@font-face
+{
+  font-family: Sanford;
+  src: url(Sanford-0103_demo.ttf);
+}
+
+@font-face
+{
+  font-family: PRAstro;
+  src: url(ASTRO.TTF);
+}
+
+@font-face
+{
+  font-family: Columban;
+  src: url(PR-Columban-Demo.ttf);
+}
+
+@font-face
+{
+  font-family: Sanford;
+  src: url(Sanford-0103_demo.ttf);
+}
+
+body {
+  background-image:url(skychart2.png);
+  color:#222;
+  font-size:20px;
+  font-family:sans-serif;
+}
+
+div.header {
+  width:800px;
+  margin:auto;
+  height:75px;
+}
+
+h1 {
+  font-weight:normal;
+  font-family:Fenix;
+  position:relative;
+  color:#813030;
+  font-size:40px;
+  /*background:#1b1b24;*/
+  padding-top:5px;
+  padding-bottom:25px;
+  text-align:center;
+}
+
+.pr-astro {
+  font-family: PRAstro;
+  font-size:90px;
+  color:rgb(76,30,105);
+  position: relative;
+  top: 5px;
+}
+
+
+.content {
+  min-height:1000px;
+  width:800px;
+  margin:auto;
+  background:rgb(239,255,245);
+  margin-top:50px;
+}
+
+.content .body {
+  font-family:Fenix;
+  margin-top:85px;
+  padding:15px 75px 15px 40px;
+  text-align:justify;
+}
+
+.content .body h2:first-child {
+  color: rgb(116,78,97);
+}
+
+.content .body h2 {
+  font-weight:normal;
+  font-size:1.3em;
+  text-align:center;
+  font-family:Fenix;
+  color:#813030;
+  font-size: 1.2em;
+  padding-left: 30px;
+  border-top: 1px solid #AAA;
+  padding-top: 10px;
+  margin-top: 30px;
+}
+
+span.title {
+  /*border-top:2px solid rgb(109,45,45);*/
+  letter-spacing:4.5px;
+  padding-top:6px;
+}
+
+span.subtitle {
+  font-size: 20px;
+  padding-left: 15px;
+  position: relative;
+  left: 97px;
+  top: 0;
+  color: #A8A2B6;
+}
+
+.footer {
+  width:800px;
+  margin:auto;
+  background-color:rgba(21,12,49,0.44);
+  font-family:Fenix;
+  font-size:0.7em;
+  text-align:center;
+  color:#888;
+}
+
+.footer a:link,
+.footer a:hover,
+.footer a:active,
+.footer a:visited
+{
+  color:#979393;
+  text-decoration:none;
+}
+
+.footer a:hover
+{
+  text-decoration:underline;
+}
+
+.donations {
+  display:none;
+  font-size:0.8em;
+  padding:5px;
+  border:2px solid #ddd;
+  width:220px;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.donations dd {
+  margin-left:0;
+  margin-bottom:5px;
+  font-size:0.6em;
+}
+
+.donations form {
+  margin-bottom:-10px;
+}
+
