@@ -1,7 +1,7 @@
 @font-face
 {
-  font-family: SunMoon;
-  src: url(SunandMoon.ttf);
+  font-family: PRAstro;
+  src: url(ASTRO.TTF);
 }
 
 @font-face
@@ -12,26 +12,14 @@
 
 @font-face
 {
-  font-family: Sanford;
-  src: url(Sanford-0103_demo.ttf);
+  font-family: Stonehenge;
+  src: url(Stonehen.ttf);
 }
 
 @font-face
 {
-  font-family: PRAstro;
-  src: url(ASTRO.TTF);
-}
-
-@font-face
-{
-  font-family: Columban;
-  src: url(PR-Columban-Demo.ttf);
-}
-
-@font-face
-{
-  font-family: Sanford;
-  src: url(Sanford-0103_demo.ttf);
+  font-family: Seshat;
+  src: url(Seshat.otf);
 }
 
 body {
@@ -49,7 +37,7 @@ div.header {
 
 h1 {
   font-weight:normal;
-  font-family:Fenix;
+  font-family:Seshat;
   position:relative;
   color:#813030;
   font-size:40px;
@@ -159,3 +147,10 @@ span.subtitle {
   margin-bottom:-10px;
 }
 
+pre {
+  font-size:0.7em;
+  background:#e2f8f2;
+  padding:5px 25px;
+  border:1px solid rgb(161,151,187);
+  border-width:0 0 0 4px;
+}

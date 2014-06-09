@@ -1,11 +1,9 @@
-<!-- TODO:
-reset css
-restyle first h2 (a.k.a subtitle)
--->
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cerridwen_favicon.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Cerridwen</title>
   </head>
 
   <body>
@@ -33,16 +31,55 @@ for your own application.
 
 <h2>API example</h2>
 
-1. blahblah
+<p>
+Cerridwen's REST API is designed to be very simple to use.
 
-2. request/reply sample
+<p>
+Let's send a GET request for some basic sun data:
 
-3. and here's the api documentation (link to readthedocs)
+<pre>
+curl -X GET http://cerridwen.viridian-project.de/api/v1/sun
+</pre>
+
+The corresponding JSON reply looks like this:
+
+<div style="overflow:auto; height=200; width=100%;">
+<pre style="color:#000020;"><span style="color:#406080; ">{</span>
+        <span style="color:#800000; ">"</span><span style="color:#1060b6; ">jd</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#008000; ">2456816.282638889</span><span style="color:#308080; ">,</span> 
+        <span style="color:#800000; ">"</span><span style="color:#1060b6; ">iso_date</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">2014-06-07T18:46:59Z</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> 
+        <span style="color:#800000; ">"</span><span style="color:#1060b6; ">position</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#406080; ">{</span>
+                <span style="color:#800000; ">"</span><span style="color:#1060b6; ">absolute_degrees</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#008000; ">76.94307934427516</span><span style="color:#308080; ">,</span> 
+                <span style="color:#800000; ">"</span><span style="color:#1060b6; ">sign</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#800000; ">"</span><span style="color:#1060b6; ">Gemini</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> 
+                <span style="color:#800000; ">"</span><span style="color:#1060b6; ">deg</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#008000; ">16.943079344275162</span><span style="color:#308080; ">,</span> 
+                <span style="color:#800000; ">"</span><span style="color:#1060b6; ">min</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#008000; ">56.58476065650974</span><span style="color:#308080; ">,</span> 
+                <span style="color:#800000; ">"</span><span style="color:#1060b6; ">rel_tuple</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#308080; ">[</span>
+                        <span style="color:#800000; ">"</span><span style="color:#1060b6; ">Gemini</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> 
+                        <span style="color:#008000; ">16.943079344275162</span><span style="color:#308080; ">,</span> 
+                        <span style="color:#008000; ">56.58476065650974</span>
+                <span style="color:#308080; ">]</span>
+        <span style="color:#406080; ">}</span><span style="color:#308080; ">,</span> 
+        <span style="color:#800000; ">"</span><span style="color:#1060b6; ">dignity</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#0f4d75; ">null</span>
+<span style="color:#406080; ">}</span>
+</pre></div>
+
+<p>
+We did not include an observer position in our request, so rise and set
+times are omitted in the reply.
+
+<p>
+You can find more elaborate examples and a detailed specification of
+the currently supported endpoints in the
+<a href="http://cerridwen.readthedocs.org/en/latest/http-api.html">HTTP API</a>
+section of the documentation.
 
 
 <h2>Python module</h2>
 <p>
 Please check <a href="https://pypi.python.org/pypi/cerridwen">Cerridwen's PyPI entry</a> for more information.
+
+<p>
+Cerridwen's full documentation can be found at
+<a href="http://cerridwen.readthedocs.org/">Read the Docs</a>.
 
 <h2>Wanted: You!</h2>
 
@@ -55,11 +92,13 @@ Please check <a href="https://pypi.python.org/pypi/cerridwen">Cerridwen's PyPI e
     </p>
 
     <p style="text-align:center">
-      <script data-gittip-username="skypher" data-gittip-widget="button"
-              src="//gttp.co/v1.js"></script>
-      <a href="bitcoin:1AeFXrSWszWtV65RcwZDeravPLvdUH7v6V"><img src="bitcoin_r.png"></a>
-      <a href="dogecoin:DRb1GHCbp1kMPUkZ6mnh3ytYt9Krc2KoXX"><img src="dogecoin_r.png"></a>
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=polzer%40gnu%2eorg&lc=US&item_name=Cerridwen&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3adummy%3aNonHostedGuest"><img src="paypal.png">Paypal</a>
+      <a href="https://www.gittip.com/skypher/"><img src="gittip_r.png"
+           title="Support Cerridwen on Gittip"></a>
+      <a href="bitcoin:1AeFXrSWszWtV65RcwZDeravPLvdUH7v6V"><img src="bitcoin_r.png"
+           title="Send Bitcoin to 1AeFXrSWszWtV65RcwZDeravPLvdUH7v6V"></a>
+      <a href="dogecoin:DRb1GHCbp1kMPUkZ6mnh3ytYt9Krc2KoXX"><img src="dogecoin_r.png"
+           title="Send Dogecoin to DRb1GHCbp1kMPUkZ6mnh3ytYt9Krc2KoXX"></a>
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=polzer%40gnu%2eorg&lc=US&item_name=Cerridwen&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3adummy%3aNonHostedGuest"><img src="paypal_r.png" title="Donate via Paypal"></a>
     </p>
 
     <p>
@@ -74,14 +113,21 @@ Please check <a href="https://pypi.python.org/pypi/cerridwen">Cerridwen's PyPI e
       <p>
         <strong>Design:</strong>
         <a href="mailto:leslie.polzer@gmx.net">Leslie P. Polzer</a>
-        &bull;
+        <br>
         <strong>Text Font:</strong>
         <a href="http://tipotype.com/fenix/">Fenix STD</a>
         &bull;
         <strong>Icon Font (Cauldron Logo):</strong>
         <a href="http://www.prfonts.com/">Peter Rempel</a>
+        &bull;
+        <strong>Title Font:</strong>
+        <a href="http://dotcolon.net/font/seshat/">Seshat</a>
         <br>
         <strong>Background image:</strong> earth's starry sky, grabbed from <a href="http://www.ap-i.net/skychart/en/start">Skychart</a>
     </div>
   </body>
 </html>
+<!-- TODO:
+reset css
+restyle first h2 (a.k.a subtitle)
+-->
