@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
@@ -35,10 +36,11 @@ for your own application.
 Cerridwen's REST API is designed to be very simple to use.
 
 <p>
-Let's send a GET request for some basic sun data:
+Let's send a GET request for some basic sun data to the
+server:
 
 <pre>
-curl -X GET http://cerridwen.viridian-project.de/api/v1/sun
+curl -X GET http://cerridwen.bluemagician.vc/api/v1/sun
 </pre>
 
 The corresponding JSON reply looks like this:
@@ -54,8 +56,8 @@ The corresponding JSON reply looks like this:
                 <span style="color:#800000; ">"</span><span style="color:#1060b6; ">min</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#008000; ">56.58476065650974</span><span style="color:#308080; ">,</span> 
                 <span style="color:#800000; ">"</span><span style="color:#1060b6; ">rel_tuple</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#308080; ">[</span>
                         <span style="color:#800000; ">"</span><span style="color:#1060b6; ">Gemini</span><span style="color:#800000; ">"</span><span style="color:#308080; ">,</span> 
-                        <span style="color:#008000; ">16.943079344275162</span><span style="color:#308080; ">,</span> 
-                        <span style="color:#008000; ">56.58476065650974</span>
+                        <span style="color:#008000; ">16</span><span style="color:#308080; ">,</span> 
+                        <span style="color:#008000; ">56</span>
                 <span style="color:#308080; ">]</span>
         <span style="color:#406080; ">}</span><span style="color:#308080; ">,</span> 
         <span style="color:#800000; ">"</span><span style="color:#1060b6; ">dignity</span><span style="color:#800000; ">"</span><span style="color:#406080; ">:</span> <span style="color:#0f4d75; ">null</span>
@@ -89,21 +91,13 @@ Cerridwen's full documentation can be found at
 
       Donations are also highly appreciated. Every little bit helps
       me spend more time on Cerridwen and related non-profit projects.
-    </p>
 
-    <p style="text-align:center">
-      <a href="https://www.gittip.com/skypher/"><img src="gittip_r.png"
-           title="Support Cerridwen on Gittip"></a>
-      <a href="bitcoin:1AeFXrSWszWtV65RcwZDeravPLvdUH7v6V"><img src="bitcoin_r.png"
-           title="Send Bitcoin to 1AeFXrSWszWtV65RcwZDeravPLvdUH7v6V"></a>
-      <a href="dogecoin:DRb1GHCbp1kMPUkZ6mnh3ytYt9Krc2KoXX"><img src="dogecoin_r.png"
-           title="Send Dogecoin to DRb1GHCbp1kMPUkZ6mnh3ytYt9Krc2KoXX"></a>
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=polzer%40gnu%2eorg&lc=US&item_name=Cerridwen&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3adummy%3aNonHostedGuest"><img src="paypal_r.png" title="Donate via Paypal"></a>
+      I offer consulting as well.
     </p>
 
     <p>
       Want to show your appreciation in a way not listed here?
-      <a href="mailto:leslie.polzer@gmx.net">Shoot me a mail</a>
+      <a href="mailto:polzer@fastmail.com">Shoot me a mail</a>
       and tell me what you have in mind!
     </p>
       </div> <!-- .body -->
@@ -112,7 +106,7 @@ Cerridwen's full documentation can be found at
     <div class="footer">
       <p>
         <strong>Design:</strong>
-        <a href="mailto:leslie.polzer@gmx.net">Leslie P. Polzer</a>
+        <a href="mailto:polzer@fastmail.com">Leslie P. Polzer</a>
         <br>
         <strong>Text Font:</strong>
         <a href="http://tipotype.com/fenix/">Fenix STD</a>
@@ -130,4 +124,5 @@ Cerridwen's full documentation can be found at
 <!-- TODO:
 reset css
 restyle first h2 (a.k.a subtitle)
+html check
 -->

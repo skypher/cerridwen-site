@@ -1,5 +1,14 @@
 @font-face
 {
+  font-family: AileronLight;
+  src: url(Aileron-Light.otf);
+  /* sans-serif alternative for h2 and body.
+   * letter-spacing of body := 0.23px
+   * line-height of body := 2.6ex */
+}
+
+@font-face
+{
   font-family: PRAstro;
   src: url(ASTRO.TTF);
 }
